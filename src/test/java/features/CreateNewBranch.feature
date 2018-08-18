@@ -10,12 +10,6 @@ Feature: Create a new Branch in the system
     Then view the branch record added to the Branches page
     |Name     | Code|
   	|PHYSICS  | B1  |
-    And edit the branch record 
-    |Name     | Code|
-  	|BIOLOGY  | B2  |
-    And delete the branch record
-    |Name     | Code|
-  	|BIOLOGY  | B2  |
    
     
     

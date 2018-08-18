@@ -7,8 +7,8 @@ import java.util.concurrent.TimeUnit;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import dataProvider.ConfigFileReader;
 
+import dataProvider.ConfigFileReader;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -26,8 +26,12 @@ WebDriver  driver;
 	
 	@Given("^Login using credentials \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void login_using_credentials_and(String arg1, String arg2) throws Throwable {
-		CommonFunctions cm = new CommonFunctions(driver);
-		cm.openBrowser();
+		//CommonFunctions cm = new CommonFunctions(driver);
+		//cm.openBrowser();
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Pranjal\\Desktop\\chrome_driver\\chromerdriver.exe");
+        driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.get("http://192.168.178.26:8080");
         GurukulaLoginPage grklogin = new GurukulaLoginPage(CommonFunctions.driver);
 		grklogin.clickOn_LoginLink();
 		grklogin.enter_Username(arg1);

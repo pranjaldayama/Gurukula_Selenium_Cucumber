@@ -1,3 +1,4 @@
-/dataProvider
-/stepDefinitions
+/runner
 /features
+/stepDefinitions
+/pageObjects

@@ -21,7 +21,7 @@ public class CommonFunctions {
 	
 	    //Function to open Gurukula website
 		public void openBrowser(){
-			System.setProperty("webdriver.chrome.driver","C:\\Users\\Pranjal\\Desktop\\chrome_driver\\chromerdriver.exe");
+			System.setProperty("webdriver.chrome.driver",configFileReader.getDriverPath());
 	        driver = new ChromeDriver();
 	        driver.manage().timeouts().implicitlyWait(configFileReader.getImplicitlyWait(), TimeUnit.SECONDS);
 	        driver.get(configFileReader.getApplicationUrl());

@@ -1,35 +1,135 @@
 [
   {
-    "source": "^user is able to navigate to Branch Page and verify all the elements are present on Branch Page$",
+    "source": "^user is logged in to the application with username \"([^\"]*)\" and password \"([^\"]*)\"$",
     "steps": [
       {
-        "name": "user is able to navigate to Branch Page and verify all the elements are present on Branch Page",
+        "name": "user is logged in to the application with username \"admin\" and password \"admin\"",
         "aggregatedDurations": {
-          "average": 3.118717598,
-          "median": 3.118717598
+          "average": 3.806658389,
+          "median": 3.543763386
         },
         "durations": [
           {
-            "duration": 3.118717598,
-            "location": "src/test/java/features/Navigate_Verify_BranchPg.feature:7"
+            "duration": 4.670133333,
+            "location": "src/test/java/features/CreateNewBranch.feature:5"
+          },
+          {
+            "duration": 3.468973453,
+            "location": "src/test/java/features/CreateNewBranch.feature:5"
+          },
+          {
+            "duration": 3.589626521,
+            "location": "src/test/java/features/CreateNewBranch.feature:5"
+          },
+          {
+            "duration": 3.497900252,
+            "location": "src/test/java/features/DeleteBranchesCreated.feature:7"
           }
         ]
       }
     ]
   },
   {
-    "source": "^user is logged in to the application with username \"([^\"]*)\" and password \"([^\"]*)\"$",
+    "source": "^user should be able to create a new Branch with \"([^\"]*)\" and \"([^\"]*)\"$",
     "steps": [
       {
-        "name": "user is logged in to the application with username \"admin\" and password \"admin\"",
+        "name": "user should be able to create a new Branch with \"PHYSICS\" and \"B1\"",
         "aggregatedDurations": {
-          "average": 10.46007426,
-          "median": 10.46007426
+          "average": 3.111300374,
+          "median": 3.111300374
         },
         "durations": [
           {
-            "duration": 10.46007426,
-            "location": "src/test/java/features/Navigate_Verify_BranchPg.feature:5"
+            "duration": 3.111300374,
+            "location": "src/test/java/features/CreateNewBranch.feature:8"
+          }
+        ]
+      },
+      {
+        "name": "user should be able to create a new Branch with \"BIOLOGY\" and \"B2\"",
+        "aggregatedDurations": {
+          "average": 2.780978,
+          "median": 2.780978
+        },
+        "durations": [
+          {
+            "duration": 2.780978,
+            "location": "src/test/java/features/CreateNewBranch.feature:8"
+          }
+        ]
+      },
+      {
+        "name": "user should be able to create a new Branch with \"CHEMISTRY\" and \"B3\"",
+        "aggregatedDurations": {
+          "average": 0.890123817,
+          "median": 0.890123817
+        },
+        "durations": [
+          {
+            "duration": 0.890123817,
+            "location": "src/test/java/features/CreateNewBranch.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^clicks on create new Branch button and enters \"([^\"]*)\" and \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "clicks on create new Branch button and enters \"PHYSICS\" and \"B1\"",
+        "aggregatedDurations": {
+          "average": 0.624579343,
+          "median": 0.624579343
+        },
+        "durations": [
+          {
+            "duration": 0.624579343,
+            "location": "src/test/java/features/CreateNewBranch.feature:7"
+          }
+        ]
+      },
+      {
+        "name": "clicks on create new Branch button and enters \"BIOLOGY\" and \"B2\"",
+        "aggregatedDurations": {
+          "average": 0.634275664,
+          "median": 0.634275664
+        },
+        "durations": [
+          {
+            "duration": 0.634275664,
+            "location": "src/test/java/features/CreateNewBranch.feature:7"
+          }
+        ]
+      },
+      {
+        "name": "clicks on create new Branch button and enters \"CHEMISTRY\" and \"B3\"",
+        "aggregatedDurations": {
+          "average": 0.680366652,
+          "median": 0.680366652
+        },
+        "durations": [
+          {
+            "duration": 0.680366652,
+            "location": "src/test/java/features/CreateNewBranch.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user should be able to delete a new branch created",
+    "steps": [
+      {
+        "name": "user should be able to delete a new branch created",
+        "aggregatedDurations": {
+          "average": 0.261211552,
+          "median": 0.261211552
+        },
+        "durations": [
+          {
+            "duration": 0.261211552,
+            "location": "src/test/java/features/DeleteBranchesCreated.feature:9"
           }
         ]
       }
@@ -41,13 +141,25 @@
       {
         "name": "user clicks on Branch Link",
         "aggregatedDurations": {
-          "average": 1.309671841,
-          "median": 1.309671841
+          "average": 0.398940437,
+          "median": 0.390401963
         },
         "durations": [
           {
-            "duration": 1.309671841,
-            "location": "src/test/java/features/Navigate_Verify_BranchPg.feature:6"
+            "duration": 0.385561192,
+            "location": "src/test/java/features/CreateNewBranch.feature:6"
+          },
+          {
+            "duration": 0.395242735,
+            "location": "src/test/java/features/CreateNewBranch.feature:6"
+          },
+          {
+            "duration": 0.450709407,
+            "location": "src/test/java/features/CreateNewBranch.feature:6"
+          },
+          {
+            "duration": 0.364248416,
+            "location": "src/test/java/features/DeleteBranchesCreated.feature:8"
           }
         ]
       }

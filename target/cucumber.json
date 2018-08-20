@@ -3,16 +3,16 @@
     "line": 1,
     "elements": [
       {
-        "line": 4,
-        "name": "Navigate to Branch Page and Verify all the elements present on Branch Page",
+        "line": 11,
+        "name": "Navigate to Branch Page verify if user is able to create a new branch",
         "description": "",
-        "id": "navigate-to-branch-page-and-verify-all-the-elements-on-branch-page;navigate-to-branch-page-and-verify-all-the-elements-present-on-branch-page",
+        "id": "create-a-new-branch-in-the-system;navigate-to-branch-page-verify-if-user-is-able-to-create-a-new-branch;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 10460074260,
+              "duration": 4670133333,
               "status": "passed"
             },
             "line": 5,
@@ -34,7 +34,7 @@
           },
           {
             "result": {
-              "duration": 1309671841,
+              "duration": 385561192,
               "status": "passed"
             },
             "line": 6,
@@ -46,23 +46,331 @@
           },
           {
             "result": {
-              "duration": 3118717598,
+              "duration": 624579343,
               "status": "passed"
             },
             "line": 7,
-            "name": "user is able to navigate to Branch Page and verify all the elements are present on Branch Page",
+            "name": "clicks on create new Branch button and enters \"PHYSICS\" and \"B1\"",
             "match": {
-              "location": "NavigateVerifyBranchPgStepDef.user_is_able_to_navigate_to_Branch_Page_and_verify_all_the_elements_are_present_on_Branch_Page()"
+              "arguments": [
+                {
+                  "val": "PHYSICS",
+                  "offset": 47
+                },
+                {
+                  "val": "B1",
+                  "offset": 61
+                }
+              ],
+              "location": "CreateNewBranchStepDef.clicks_on_create_new_Branch_button_and_enters_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3111300374,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should be able to create a new Branch with \"PHYSICS\" and \"B1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PHYSICS",
+                  "offset": 49
+                },
+                {
+                  "val": "B1",
+                  "offset": 63
+                }
+              ],
+              "location": "CreateNewBranchStepDef.user_should_be_able_to_create_a_new_Branch_with_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Navigate to Branch Page verify if user is able to create a new branch",
+        "description": "",
+        "id": "create-a-new-branch-in-the-system;navigate-to-branch-page-verify-if-user-is-able-to-create-a-new-branch;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3468973453,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is logged in to the application with username \"admin\" and password \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 52
+                },
+                {
+                  "val": "admin",
+                  "offset": 73
+                }
+              ],
+              "location": "NavigateVerifyBranchPgStepDef.user_is_logged_in_to_the_application_with_username_and_password(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 395242735,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on Branch Link",
+            "match": {
+              "location": "NavigateVerifyBranchPgStepDef.user_clicks_on_Branch_Link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 634275664,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "clicks on create new Branch button and enters \"BIOLOGY\" and \"B2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BIOLOGY",
+                  "offset": 47
+                },
+                {
+                  "val": "B2",
+                  "offset": 61
+                }
+              ],
+              "location": "CreateNewBranchStepDef.clicks_on_create_new_Branch_button_and_enters_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2780978000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should be able to create a new Branch with \"BIOLOGY\" and \"B2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BIOLOGY",
+                  "offset": 49
+                },
+                {
+                  "val": "B2",
+                  "offset": 63
+                }
+              ],
+              "location": "CreateNewBranchStepDef.user_should_be_able_to_create_a_new_Branch_with_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Navigate to Branch Page verify if user is able to create a new branch",
+        "description": "",
+        "id": "create-a-new-branch-in-the-system;navigate-to-branch-page-verify-if-user-is-able-to-create-a-new-branch;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3589626521,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is logged in to the application with username \"admin\" and password \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 52
+                },
+                {
+                  "val": "admin",
+                  "offset": 73
+                }
+              ],
+              "location": "NavigateVerifyBranchPgStepDef.user_is_logged_in_to_the_application_with_username_and_password(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 450709407,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on Branch Link",
+            "match": {
+              "location": "NavigateVerifyBranchPgStepDef.user_clicks_on_Branch_Link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 680366652,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "clicks on create new Branch button and enters \"CHEMISTRY\" and \"B3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CHEMISTRY",
+                  "offset": 47
+                },
+                {
+                  "val": "B3",
+                  "offset": 63
+                }
+              ],
+              "location": "CreateNewBranchStepDef.clicks_on_create_new_Branch_button_and_enters_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 890123817,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should be able to create a new Branch with \"CHEMISTRY\" and \"B3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CHEMISTRY",
+                  "offset": 49
+                },
+                {
+                  "val": "B3",
+                  "offset": 65
+                }
+              ],
+              "location": "CreateNewBranchStepDef.user_should_be_able_to_create_a_new_Branch_with_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create a new Branch in the system",
+    "description": "  Verify is user is able to create a new branch in the system",
+    "id": "create-a-new-branch-in-the-system",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/CreateNewBranch.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 3,
+            "value": "# Pre-requisite for this test script is CreateNewBranch.feature"
+          },
+          {
+            "line": 4,
+            "value": "#First execute the feature CreateNewBranch then execute the feeature DeleteBranchesCreated"
+          }
+        ],
+        "line": 6,
+        "name": "Navigate to Branch Page verify if user is able to create a new branch",
+        "description": "",
+        "id": "create-a-new-branch-in-the-system;navigate-to-branch-page-verify-if-user-is-able-to-create-a-new-branch",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3497900252,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is logged in to the application with username \"admin\" and password \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 52
+                },
+                {
+                  "val": "admin",
+                  "offset": 73
+                }
+              ],
+              "location": "NavigateVerifyBranchPgStepDef.user_is_logged_in_to_the_application_with_username_and_password(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 364248416,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on Branch Link",
+            "match": {
+              "location": "NavigateVerifyBranchPgStepDef.user_clicks_on_Branch_Link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 261211552,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should be able to delete a new branch created",
+            "match": {
+              "location": "DeleteBranchStepDef.user_should_be_able_to_delete_a_new_branch_created()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Navigate to Branch Page and verify all the elements on Branch Page",
-    "description": "  Verify if user is able to navigate to Branch Page and Verify all the elements present on Branch Page",
-    "id": "navigate-to-branch-page-and-verify-all-the-elements-on-branch-page",
+    "name": "Create a new Branch in the system",
+    "description": "  Verify is user is able to create a new branch in the system",
+    "id": "create-a-new-branch-in-the-system",
     "keyword": "Feature",
-    "uri": "src/test/java/features/Navigate_Verify_BranchPg.feature"
+    "uri": "src/test/java/features/DeleteBranchesCreated.feature"
   }
 ]

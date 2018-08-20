@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="14.888464">
-<testcase classname="Navigate to Branch Page and verify all the elements on Branch Page" name="Navigate to Branch Page and Verify all the elements present on Branch Page" time="14.888464">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="25.80523">
+<testcase classname="Create a new Branch in the system" name="Navigate to Branch Page verify if user is able to create a new branch" time="8.791574">
 <system-out><![CDATA[Given user is logged in to the application with username "admin" and password "admin".passed
 When user clicks on Branch Link.............................................passed
-Then user is able to navigate to Branch Page and verify all the elements are present on Branch Page.passed
+And clicks on create new Branch button and enters "PHYSICS" and "B1"........passed
+Then user should be able to create a new Branch with "PHYSICS" and "B1".....passed
+]]></system-out>
+</testcase>
+<testcase classname="Create a new Branch in the system" name="Navigate to Branch Page verify if user is able to create a new branch 2" time="7.27947">
+<system-out><![CDATA[Given user is logged in to the application with username "admin" and password "admin".passed
+When user clicks on Branch Link.............................................passed
+And clicks on create new Branch button and enters "BIOLOGY" and "B2"........passed
+Then user should be able to create a new Branch with "BIOLOGY" and "B2".....passed
+]]></system-out>
+</testcase>
+<testcase classname="Create a new Branch in the system" name="Navigate to Branch Page verify if user is able to create a new branch 3" time="5.610826">
+<system-out><![CDATA[Given user is logged in to the application with username "admin" and password "admin".passed
+When user clicks on Branch Link.............................................passed
+And clicks on create new Branch button and enters "CHEMISTRY" and "B3"......passed
+Then user should be able to create a new Branch with "CHEMISTRY" and "B3"...passed
+]]></system-out>
+</testcase>
+<testcase classname="Create a new Branch in the system" name="Navigate to Branch Page verify if user is able to create a new branch" time="4.12336">
+<system-out><![CDATA[Given user is logged in to the application with username "admin" and password "admin".passed
+When user clicks on Branch Link.............................................passed
+Then user should be able to delete a new branch created.....................passed
 ]]></system-out>
 </testcase>
 </testsuite>

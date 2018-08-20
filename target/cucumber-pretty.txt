@@ -1,7 +1,37 @@
-Feature: Navigate to Branch Page and verify all the elements on Branch Page
-    Verify if user is able to navigate to Branch Page and Verify all the elements present on Branch Page
+Feature: Create a new Branch in the system
+    Verify is user is able to create a new branch in the system
 
-  Scenario: Navigate to Branch Page and Verify all the elements present on Branch Page                  [90m# src/test/java/features/Navigate_Verify_BranchPg.feature:4[0m
-    [32mGiven [0m[32muser is logged in to the application with username "[0m[32m[1madmin[0m[32m" and password "[0m[32m[1madmin[0m[32m"[0m               [90m# NavigateVerifyBranchPgStepDef.user_is_logged_in_to_the_application_with_username_and_password(String,String)[0m
-    [32mWhen [0m[32muser clicks on Branch Link[0m                                                                     [90m# NavigateVerifyBranchPgStepDef.user_clicks_on_Branch_Link()[0m
-    [32mThen [0m[32muser is able to navigate to Branch Page and verify all the elements are present on Branch Page[0m [90m# NavigateVerifyBranchPgStepDef.user_is_able_to_navigate_to_Branch_Page_and_verify_all_the_elements_are_present_on_Branch_Page()[0m
+  Scenario Outline: Navigate to Branch Page verify if user is able to create a new branch [90m# src/test/java/features/CreateNewBranch.feature:4[0m
+    [36mGiven [0m[36muser is logged in to the application with username "admin" and password "admin"[0m
+    [36mWhen [0m[36muser clicks on Branch Link[0m
+    [36mAnd [0m[36mclicks on create new Branch button and enters "<Name>" and "<Code>"[0m
+    [36mThen [0m[36muser should be able to create a new Branch with "<Name>" and "<Code>"[0m
+
+    Examples: 
+
+  Scenario Outline: Navigate to Branch Page verify if user is able to create a new branch [90m# src/test/java/features/CreateNewBranch.feature:11[0m
+    [32mGiven [0m[32muser is logged in to the application with username "[0m[32m[1madmin[0m[32m" and password "[0m[32m[1madmin[0m[32m"[0m [90m# NavigateVerifyBranchPgStepDef.user_is_logged_in_to_the_application_with_username_and_password(String,String)[0m
+    [32mWhen [0m[32muser clicks on Branch Link[0m                                                       [90m# NavigateVerifyBranchPgStepDef.user_clicks_on_Branch_Link()[0m
+    [32mAnd [0m[32mclicks on create new Branch button and enters "[0m[32m[1mPHYSICS[0m[32m" and "[0m[32m[1mB1[0m[32m"[0m                  [90m# CreateNewBranchStepDef.clicks_on_create_new_Branch_button_and_enters_and(String,String)[0m
+    [32mThen [0m[32muser should be able to create a new Branch with "[0m[32m[1mPHYSICS[0m[32m" and "[0m[32m[1mB1[0m[32m"[0m               [90m# CreateNewBranchStepDef.user_should_be_able_to_create_a_new_Branch_with_and(String,String)[0m
+
+  Scenario Outline: Navigate to Branch Page verify if user is able to create a new branch [90m# src/test/java/features/CreateNewBranch.feature:12[0m
+    [32mGiven [0m[32muser is logged in to the application with username "[0m[32m[1madmin[0m[32m" and password "[0m[32m[1madmin[0m[32m"[0m [90m# NavigateVerifyBranchPgStepDef.user_is_logged_in_to_the_application_with_username_and_password(String,String)[0m
+    [32mWhen [0m[32muser clicks on Branch Link[0m                                                       [90m# NavigateVerifyBranchPgStepDef.user_clicks_on_Branch_Link()[0m
+    [32mAnd [0m[32mclicks on create new Branch button and enters "[0m[32m[1mBIOLOGY[0m[32m" and "[0m[32m[1mB2[0m[32m"[0m                  [90m# CreateNewBranchStepDef.clicks_on_create_new_Branch_button_and_enters_and(String,String)[0m
+    [32mThen [0m[32muser should be able to create a new Branch with "[0m[32m[1mBIOLOGY[0m[32m" and "[0m[32m[1mB2[0m[32m"[0m               [90m# CreateNewBranchStepDef.user_should_be_able_to_create_a_new_Branch_with_and(String,String)[0m
+
+  Scenario Outline: Navigate to Branch Page verify if user is able to create a new branch [90m# src/test/java/features/CreateNewBranch.feature:13[0m
+    [32mGiven [0m[32muser is logged in to the application with username "[0m[32m[1madmin[0m[32m" and password "[0m[32m[1madmin[0m[32m"[0m [90m# NavigateVerifyBranchPgStepDef.user_is_logged_in_to_the_application_with_username_and_password(String,String)[0m
+    [32mWhen [0m[32muser clicks on Branch Link[0m                                                       [90m# NavigateVerifyBranchPgStepDef.user_clicks_on_Branch_Link()[0m
+    [32mAnd [0m[32mclicks on create new Branch button and enters "[0m[32m[1mCHEMISTRY[0m[32m" and "[0m[32m[1mB3[0m[32m"[0m                [90m# CreateNewBranchStepDef.clicks_on_create_new_Branch_button_and_enters_and(String,String)[0m
+    [32mThen [0m[32muser should be able to create a new Branch with "[0m[32m[1mCHEMISTRY[0m[32m" and "[0m[32m[1mB3[0m[32m"[0m             [90m# CreateNewBranchStepDef.user_should_be_able_to_create_a_new_Branch_with_and(String,String)[0m
+Feature: Create a new Branch in the system
+    Verify is user is able to create a new branch in the system
+
+  # Pre-requisite for this test script is CreateNewBranch.feature
+  #First execute the feature CreateNewBranch then execute the feeature DeleteBranchesCreated
+  Scenario: Navigate to Branch Page verify if user is able to create a new branch         [90m# src/test/java/features/DeleteBranchesCreated.feature:6[0m
+    [32mGiven [0m[32muser is logged in to the application with username "[0m[32m[1madmin[0m[32m" and password "[0m[32m[1madmin[0m[32m"[0m [90m# NavigateVerifyBranchPgStepDef.user_is_logged_in_to_the_application_with_username_and_password(String,String)[0m
+    [32mWhen [0m[32muser clicks on Branch Link[0m                                                       [90m# NavigateVerifyBranchPgStepDef.user_clicks_on_Branch_Link()[0m
+    [32mThen [0m[32muser should be able to delete a new branch created[0m                               [90m# DeleteBranchStepDef.user_should_be_able_to_delete_a_new_branch_created()[0m

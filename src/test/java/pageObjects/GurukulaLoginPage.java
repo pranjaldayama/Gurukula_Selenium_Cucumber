@@ -3,6 +3,7 @@ package pageObjects;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.WebElement;
@@ -27,9 +28,14 @@ public class GurukulaLoginPage {
 	@FindBy(how = How.XPATH, using = "//button[contains(text(),'Authenticate')]")
 	public WebElement btn_Authenticate;
 	
-	//Label text Welcome to Gurukula!
-	@FindBy(how = How.XPATH, using = "//h1[contains(text(),'Welcome to Gurukula!')]")
-	public WebElement txt_Welcome;
+	//Text Successful login
+	@FindBy(how = How.XPATH, using = "//div[@class='alert alert-success ng-scope ng-binding']")
+	public WebElement txt_LoginSuccess;
+	
+	//Text Failure authentication for login
+	@FindBy(how = How.XPATH, using = "//div[@class='alert alert-danger ng-scope']")
+	public WebElement txt_LoginFailure;
+	
 	
 	//WebElment Account on Login Page
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Account')]")
@@ -51,12 +57,6 @@ public class GurukulaLoginPage {
 			lnk_Login.click();
 		}
 	
-	//Function to open browser
-	public void openBrowser(){
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("http://192.168.178.17:8080");
-	}
-	
 	//Function to enter Username
 	public void enter_Username(String arg1) {
 		txtBx_Username.sendKeys(arg1);
@@ -72,13 +72,22 @@ public class GurukulaLoginPage {
 		btn_Authenticate.click();
 	}
 	
-	//Function to verify the Welcome message
-		public void verify_WelcomeMessage(){
-			if (txt_Welcome.isDisplayed()) {
-				Assert.assertEquals("Welcome to Gurukula!", txt_Welcome.getText());
-				System.out.print("Successfully logged in Gurukula");
-			} else{
-				System.out.print("Failed to login Gurukula");
+	//Function to verify message for successful or failure login 
+		public void verify_LoginSuccessFailure(){
+			try {
+				if (txt_LoginSuccess.isDisplayed() && (txt_LoginSuccess.getText().contains("You are logged in as user"))) {
+					Assert.assertTrue("Successful Login to Gurukula!",true);
+					System.out.println("............SUCCESS...........");
+				}
+				else {
+					Assert.assertTrue("Failure while logging in to Gurukula!",true);
+					System.out.println("............FAILUREEE...........");
+				}		
+				
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				
 			}
 		}
 		
@@ -91,11 +100,6 @@ public class GurukulaLoginPage {
 	 public void clickOn_LogOut(){
 		 btn_LogOut.click();
 		}
-	 
-	//Function to close browser
-		public void closeBrowser(){
-			driver.close();
-		}
-		
+	
 		
 }

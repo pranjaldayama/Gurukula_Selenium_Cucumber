@@ -18,15 +18,8 @@ A Java‑based Selenium + Cucumber test automation framework designed to validat
 
 ## 📋 Project Structure
 
-Gurukula_Selenium_Cucumber/
-├── src/
-│ ├── main/java/ ← Page objects and helpers
-│ └── test/java/ ← Step definitions
-├── src/test/resources/
-│ ├── features/ ← .feature files (Gherkin syntax)
-│ └── config.properties ← Test settings (e.g. browser, base URL)
-├── pom.xml ← Build and test dependencies
-└── README.md ← You are here 😊
+<pre> ## <code> ├── src/ │ ├── main/java/ ← Page objects and helpers │ └── test/java/ ← Step definitions ├── src/test/resources/ │ ├── features/ ← .feature files (Gherkin syntax) │ └── config.properties ← Test settings (e.g. browser, base URL) ├── pom.xml ← Build and test dependencies └── README.md ← You are here 😊 </code> </pre>
+
 
 
 ## 🚀 Getting Started
